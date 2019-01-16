@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/quiz.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script src="../javascript/javascript.js"></script>
+  <title>Quiz</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><h1>LEÕES</h1></a>
+      <div class="btn-responsivo"><!--botao menu responsivo-->
+        <label for="btn-menu">&#9776;</label>
+        <input type="checkbox" onclick="controladoraMenu()" id="btn-menu">
+      </div>
+      <ul><!--menu normal-->
+        <li><a href="curiosidades.html" target="_blank">CURIOSIDADES</a></li>
+        <li><a href="pesquisa.html" target="_blank">PESQUISA</a></li>
+        <li><a href="quiz.html" target="_self">QUIZ</a></li>
+        <li><a href="cultura.html" target="_blank">CULTURA</a></li>
+      </ul>
+    </nav>
+    <ul id="menu-responsivo"><!--menu responsivo-->
+      <li><a href="curiosidades.html">CURIOSIDADES</a></li>
+      <li><a href="pesquisa.html">PESQUISA</a></li>
+      <li><a href="quiz.html">QUIZ</a></li>
+      <li><a href="cultura.html">CULTURA</a></li>
+    </ul>
+  </header>
+  <main>
+    <section>
+      <h3 id="Título">Quiz</h3>
+      <img src="../img/leaorindo.jpg" alt="Leão Rindo">
+    </section>
+    <section>
+      <h2>PERGUNTAS</h2>
+      <div>
+        <h3>Qual é a média de idade de vida de um Leão?</h3>
+        <input type="radio" id="a1" name="questao1" value="1">
+        <label for="a1">27 anos </label>
+        <input type="radio" id="b1" name="questao1" value="2">
+        <label for="b1">38 anos </label>
+        <input type="radio" id="c1" name="questao1" value="3">
+        <label for="c1">14 anos</label>
+        <input type="radio" id="d1" name="questao1" value="4">
+        <label for="d1">24 anos</label>
+      </div>
+      <div>
+        <h3>Quantas espécies de leão existem no mundo?</h3>
+        <input type="radio" id="a2" name="questao2" value="1">
+        <label for="a2">7 espécies</label>
+        <input type="radio" id="b2" name="questao2" value="2">
+        <label for="b2">10 espécies</label>
+        <input type="radio" id="c2" name="questao2" value="3">
+        <label for="c2">12 espécies</label>
+        <input type="radio" id="d2" name="questao2" value="4">
+        <label for="d2">1 espécie</label>
+      </div>
+      <div>
+        <h3>Quantos quilos pesa um leão adulto? </h3>
+        <input type="radio" id="a3" name="questao3" value="1">
+        <label for="a3">190 quilos</label>
+        <input type="radio" id="b3" name="questao3" value="2">
+        <label for="b3">230 quilos</label>
+        <input type="radio" id="c3" name="questao3" value="3">
+        <label for="c3">250 quilos </label>
+        <input type="radio" id="d3" name="questao3" value="4">
+        <label for="d3">280 quilos</label>
+      </div>
+      <div>
+        <h3>Qual a atual população de leões ao redor do mundo? </h3>
+        <input type="radio" id="a4" name="questao4" value="1">
+        <label for="a4">10.000 leões </label>
+        <input type="radio" id="b4" name="questao4" value="2">
+        <label for="b4">20.000 leões </label>
+        <input type="radio" id="c4" name="questao4" value="3">
+        <label for="c4">15.000 leões</label>
+        <input type="radio" id="d4" name="questao4" value="4">
+        <label for="d4">32.000 leões</label>
+      </div>
+      <button type="button" onclick="controladoraQuiz()">CONFERIR</button>
+      <p id="acertos">Você acertou: X questões!</p>
+    </section>
+  </main>
+  <footer>
+    <h4><a href="http://bsi.uniriotec.br/bsi/index.html" style="none">BSI-UNIRO</a></h4>
+  </footer>
+</body>
+</html>
